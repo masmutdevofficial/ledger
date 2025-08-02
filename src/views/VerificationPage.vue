@@ -143,7 +143,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/status-ktp",
+          "https://ledger.masmutdev.id/api/status-ktp",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },
@@ -201,7 +201,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/verif-ktp",
+          "https://ledger.masmutdev.id/api/verif-ktp",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },

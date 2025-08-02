@@ -237,7 +237,7 @@ export default {
     async fetchSettings() {
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/data-website"
+          "https://ledger.masmutdev.id/api/data-website"
         );
         let result = await response.json();
 
@@ -320,7 +320,7 @@ export default {
       }
 
       try {
-        let response = await fetch("https://ledger.masmutdev.id//api/deposit", {
+        let response = await fetch("https://ledger.masmutdev.id/api/deposit", {
           method: "POST",
           headers: { Authorization: `Bearer ${jwtToken}` },
           body: formData,

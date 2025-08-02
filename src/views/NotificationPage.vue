@@ -149,7 +149,7 @@ export default {
 
       try {
         await fetch(
-          "https://ledger.masmutdev.id//api/update-history-transaksi",
+          "https://ledger.masmutdev.id/api/update-history-transaksi",
           {
             method: "POST",
             headers: {
@@ -179,7 +179,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/cek-history-transaksi",
+          "https://ledger.masmutdev.id/api/cek-history-transaksi",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },

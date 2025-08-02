@@ -82,7 +82,7 @@ export default {
     const fetchOrderData = async () => {
       try {
         const response = await axios.get(
-          `https://ledger.masmutdev.id//api/latest-trade/${props.symbol}usdt`
+          `https://ledger.masmutdev.id/api/latest-trade/${props.symbol}usdt`
         );
 
         // Menentukan struktur data yang diterima

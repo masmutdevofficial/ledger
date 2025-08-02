@@ -159,7 +159,7 @@ export default {
       try {
         // Kirim data ke API
         const response = await axios.post(
-          "https://ledger.masmutdev.id//api/register",
+          "https://ledger.masmutdev.id/api/register",
           {
             username: this.username,
             password: this.password,

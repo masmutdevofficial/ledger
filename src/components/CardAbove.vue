@@ -232,7 +232,7 @@ export default {
 
     const userAvatar = computed(() =>
       userData.value?.user?.avatar
-        ? `https://ledger.masmutdev.id//storage/${userData.value.user.avatar.replace(
+        ? `https://ledger.masmutdev.id/storage/${userData.value.user.avatar.replace(
             /\\/g,
             "/"
           )}`
@@ -272,7 +272,7 @@ export default {
         formData.append("avatar", selectedFile.value);
 
         const response = await fetch(
-          "https://ledger.masmutdev.id//api/send-avatar",
+          "https://ledger.masmutdev.id/api/send-avatar",
           {
             method: "POST",
             headers: {

@@ -198,7 +198,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/get-data-bank",
+          "https://ledger.masmutdev.id/api/get-data-bank",
           {
             method: "GET",
             headers: {
@@ -292,14 +292,11 @@ export default {
       }
 
       try {
-        let response = await fetch(
-          "https://ledger.masmutdev.id//api/withdraw",
-          {
-            method: "POST",
-            headers: { Authorization: `Bearer ${jwtToken}` },
-            body: formData,
-          }
-        );
+        let response = await fetch("https://ledger.masmutdev.id/api/withdraw", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${jwtToken}` },
+          body: formData,
+        });
 
         let result = await response.json();
 

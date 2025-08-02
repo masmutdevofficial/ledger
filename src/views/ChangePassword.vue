@@ -136,7 +136,7 @@ export default {
       isSubmitting.value = true;
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/change-password",
+          "https://ledger.masmutdev.id/api/change-password",
           {
             method: "POST",
             headers: {

@@ -236,7 +236,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/claim-event",
+          "https://ledger.masmutdev.id/api/claim-event",
           {
             method: "POST",
             headers: {
@@ -292,7 +292,7 @@ export default {
       this.isModalOpen = true;
       try {
         let response = await fetch(
-          "https://ledger.masmutdev.id//api/data-website"
+          "https://ledger.masmutdev.id/api/data-website"
         );
         let result = await response.json();
         if (result.success) {

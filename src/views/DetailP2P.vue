@@ -227,7 +227,7 @@ const submitDeposit = async () => {
   isSubmitting.value = true;
 
   try {
-    const response = await fetch("https://ledger.masmutdev.id//api/deposit", {
+    const response = await fetch("https://ledger.masmutdev.id/api/deposit", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${jwtToken}`,
@@ -291,7 +291,7 @@ const previewImage = (event) => {
 
 const fetchSettings = async () => {
   try {
-    let response = await fetch("https://ledger.masmutdev.id//api/data-website");
+    let response = await fetch("https://ledger.masmutdev.id/api/data-website");
     let result = await response.json();
 
     if (result.success) {

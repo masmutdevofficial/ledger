@@ -82,7 +82,7 @@ const fetchExchangers = async () => {
 
   try {
     const response = await fetch(
-      "https://ledger.masmutdev.id//api/get-exchanger",
+      "https://ledger.masmutdev.id/api/get-exchanger",
       {
         method: "POST",
         headers: {

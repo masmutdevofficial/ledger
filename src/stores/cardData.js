@@ -18,7 +18,7 @@ export const useCardDataStore = defineStore("cardData", {
 
       try {
         const response = await axios.get(
-          "https://ledger.masmutdev.id//api/card-data",
+          "https://ledger.masmutdev.id/api/card-data",
           {
             headers: {
               Authorization: `${token}`,

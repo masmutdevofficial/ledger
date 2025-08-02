@@ -82,7 +82,7 @@ export default {
   setup() {
     const historyData = ref([]);
     const alert = ref(null);
-    const apiUrl = "https://ledger.masmutdev.id//api/history-crypto-order";
+    const apiUrl = "https://ledger.masmutdev.id/api/history-crypto-order";
 
     const fetchHistoryData = async () => {
       const jwtToken = localStorage.getItem("jwt_token");

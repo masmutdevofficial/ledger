@@ -447,7 +447,7 @@ export default {
         formData.append("updated_at", new Date().toISOString());
 
         const response = await fetch(
-          "https://ledger.masmutdev.id//api/transaksi-crypto-open-main",
+          "https://ledger.masmutdev.id/api/transaksi-crypto-open-main",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },
@@ -487,7 +487,7 @@ export default {
             orderFormData.append("updated_at", new Date().toISOString());
 
             const orderResponse = await fetch(
-              "https://ledger.masmutdev.id//api/transaksi-crypto-order-main",
+              "https://ledger.masmutdev.id/api/transaksi-crypto-order-main",
               {
                 method: "POST",
                 headers: { Authorization: `Bearer ${jwtToken}` },
@@ -539,8 +539,8 @@ export default {
 
         let apiUrl =
           this.activeTab === "Open Orders"
-            ? "https://ledger.masmutdev.id//api/history-crypto-open"
-            : "https://ledger.masmutdev.id//api/history-crypto-order";
+            ? "https://ledger.masmutdev.id/api/history-crypto-open"
+            : "https://ledger.masmutdev.id/api/history-crypto-order";
 
         const response = await axios.post(
           apiUrl,
@@ -647,7 +647,7 @@ export default {
         formData.append("updated_at", new Date().toISOString());
 
         const response = await fetch(
-          "https://ledger.masmutdev.id//api/transaksi-crypto-order-main",
+          "https://ledger.masmutdev.id/api/transaksi-crypto-order-main",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },
