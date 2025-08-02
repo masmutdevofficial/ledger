@@ -142,10 +142,13 @@ export default {
       }
 
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/status-ktp", {
-          method: "POST",
-          headers: { Authorization: `Bearer ${jwtToken}` },
-        });
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/status-ktp",
+          {
+            method: "POST",
+            headers: { Authorization: `Bearer ${jwtToken}` },
+          }
+        );
 
         let result = await response.json();
 
@@ -197,11 +200,14 @@ export default {
       formData.append("ktp", selectedFile.value);
 
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/verif-ktp", {
-          method: "POST",
-          headers: { Authorization: `Bearer ${jwtToken}` },
-          body: formData,
-        });
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/verif-ktp",
+          {
+            method: "POST",
+            headers: { Authorization: `Bearer ${jwtToken}` },
+            body: formData,
+          }
+        );
 
         let result = await response.json();
 

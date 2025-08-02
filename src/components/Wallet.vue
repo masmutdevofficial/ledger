@@ -235,14 +235,17 @@ export default {
       }
 
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/claim-event", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${jwtToken}`,
-          },
-          body: JSON.stringify({ token: jwtToken }), // Kirim sebagai JSON
-        });
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/claim-event",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${jwtToken}`,
+            },
+            body: JSON.stringify({ token: jwtToken }), // Kirim sebagai JSON
+          }
+        );
 
         let result = await response.json();
 
@@ -288,7 +291,9 @@ export default {
     async openModal() {
       this.isModalOpen = true;
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/data-website");
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/data-website"
+        );
         let result = await response.json();
         if (result.success) {
           this.eventImage =

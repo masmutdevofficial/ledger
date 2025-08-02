@@ -81,12 +81,15 @@ const fetchExchangers = async () => {
   loading.value = true;
 
   try {
-    const response = await fetch("https://tes.zshot-ai.com/api/get-exchanger", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${jwtToken}`,
-      },
-    });
+    const response = await fetch(
+      "https://ledger.masmutdev.id//api/get-exchanger",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${jwtToken}`,
+        },
+      }
+    );
 
     const data = await response.json();
 

@@ -137,7 +137,7 @@ export default {
       this.error = null;
       try {
         const response = await fetch(
-          "https://tes.zshot-ai.com/api/get-crypto-list"
+          "https://ledger.masmutdev.id//api/get-crypto-list"
         );
         if (!response.ok) throw new Error("Gagal mengambil data dari server.");
         const data = await response.json();

@@ -148,14 +148,17 @@ export default {
       }
 
       try {
-        await fetch("https://tes.zshot-ai.com/api/update-history-transaksi", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${jwtToken}`,
-          },
-          body: JSON.stringify({}),
-        });
+        await fetch(
+          "https://ledger.masmutdev.id//api/update-history-transaksi",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${jwtToken}`,
+            },
+            body: JSON.stringify({}),
+          }
+        );
       } catch (error) {
         console.error("Error updating transaction history:", error);
       }
@@ -176,7 +179,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://tes.zshot-ai.com/api/cek-history-transaksi",
+          "https://ledger.masmutdev.id//api/cek-history-transaksi",
           {
             method: "POST",
             headers: { Authorization: `Bearer ${jwtToken}` },

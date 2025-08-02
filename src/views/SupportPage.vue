@@ -217,7 +217,7 @@ export default {
 
       try {
         const response = await axios.get(
-          "https://tes.zshot-ai.com/api/data-messages",
+          "https://ledger.masmutdev.id//api/data-messages",
           {
             headers: { Authorization: `Bearer ${jwtToken}` },
           }
@@ -268,7 +268,7 @@ export default {
       this.loading = true;
       try {
         const response = await axios.post(
-          "https://tes.zshot-ai.com/api/messages",
+          "https://ledger.masmutdev.id//api/messages",
           formData,
           {
             headers: {

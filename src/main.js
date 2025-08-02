@@ -39,7 +39,7 @@ const head = createHead({
     {
       name: "twitter:image",
       content:
-        "#https://tes.zshot-ai.com/storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
+        "#https://ledger.masmutdev.id//storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
     },
     { name: "twitter:site", content: "https://ledgerwallet.cloud" },
     { property: "og:title", content: "Ledger X" },
@@ -51,7 +51,7 @@ const head = createHead({
     {
       property: "og:image",
       content:
-        "https://tes.zshot-ai.com/storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
+        "https://ledger.masmutdev.id//storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
     },
     { property: "og:url", content: "https://ledgerwallet.cloud" },
     { property: "og:type", content: "website" },
@@ -61,7 +61,7 @@ const head = createHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "https://tes.zshot-ai.com/storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
+      href: "https://ledger.masmutdev.id//storage/logos/IrOJ3MujUdXDW9L3AF1ATniIqs8qRPXflCojP8Vy.png",
     }, // Favicon
   ],
 });

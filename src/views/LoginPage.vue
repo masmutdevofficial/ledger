@@ -145,7 +145,7 @@ export default {
 
       try {
         const response = await axios.post(
-          "https://tes.zshot-ai.com/api/login",
+          "https://ledger.masmutdev.id//api/login",
           {
             username: this.username,
             password: this.password,

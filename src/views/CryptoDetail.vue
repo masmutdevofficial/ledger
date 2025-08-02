@@ -218,7 +218,7 @@ export default {
     const fetchMarketData = async () => {
       try {
         const response = await axios.get(
-          `https://tes.zshot-ai.com/api/crypto-data-detail/${symbol.value}usdt`
+          `https://ledger.masmutdev.id//api/crypto-data-detail/${symbol.value}usdt`
         );
 
         // Simpan data sebelumnya sebelum update

@@ -60,7 +60,7 @@ async function fetchCandlestickForPeriod(period) {
 
   try {
     const postRes = await axios.post(
-      "https://tes.zshot-ai.com/api/crypto-data-candlestick",
+      "https://ledger.masmutdev.id//api/crypto-data-candlestick",
       {
         data: candleData,
       }

@@ -86,7 +86,7 @@ export default {
       try {
         // Gunakan properti period untuk menentukan endpoint API
         const response = await axios.get(
-          `https://tes.zshot-ai.com/api/crypto-data-candlestick/${this.symbol}/${this.period}`
+          `https://ledger.masmutdev.id//api/crypto-data-candlestick/${this.symbol}/${this.period}`
         );
         console.log("API Response:", response.data);
         let data = response.data;

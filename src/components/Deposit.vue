@@ -236,7 +236,9 @@ export default {
   methods: {
     async fetchSettings() {
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/data-website");
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/data-website"
+        );
         let result = await response.json();
 
         if (result.success) {
@@ -318,7 +320,7 @@ export default {
       }
 
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/deposit", {
+        let response = await fetch("https://ledger.masmutdev.id//api/deposit", {
           method: "POST",
           headers: { Authorization: `Bearer ${jwtToken}` },
           body: formData,

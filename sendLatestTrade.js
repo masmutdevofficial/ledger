@@ -64,7 +64,7 @@ async function fetchAndSendLatestTrade() {
         JSON.stringify(allTrades, null, 2)
       );
       const postRes = await axios.post(
-        "https://tes.zshot-ai.com/api/latest-trade",
+        "https://ledger.masmutdev.id//api/latest-trade",
         {
           data: allTrades,
         }

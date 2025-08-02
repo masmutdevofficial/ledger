@@ -196,7 +196,7 @@ export default {
 
       try {
         let response = await fetch(
-          "https://tes.zshot-ai.com/api/get-data-bank",
+          "https://ledger.masmutdev.id//api/get-data-bank",
           {
             method: "GET",
             headers: {
@@ -244,14 +244,17 @@ export default {
       };
 
       try {
-        let response = await fetch("https://tes.zshot-ai.com/api/data-bank", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${jwtToken}`,
-          },
-          body: JSON.stringify(formData),
-        });
+        let response = await fetch(
+          "https://ledger.masmutdev.id//api/data-bank",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${jwtToken}`,
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
         let result = await response.json();
 

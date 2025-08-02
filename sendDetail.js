@@ -53,7 +53,7 @@ async function fetchAndSendData() {
     }
 
     const postResponse = await axios.post(
-      "https://tes.zshot-ai.com/api/crypto-data-detail",
+      "https://ledger.masmutdev.id//api/crypto-data-detail",
       { data: filteredData }
     );
 
