@@ -11,8 +11,10 @@
           class="bg-gray-400 dark:bg-slate-900 text-[8px] uppercase text-black dark:text-gray-400"
         >
           <tr>
-            <th class="px-4 py-3 text-center">Name / 24h Transaction Volume</th>
-            <th class="px-4 py-3 text-center">
+            <th class="px-4 py-3 text-center text-sm">
+              Name / 24h Transaction Volume
+            </th>
+            <th class="px-4 py-3 text-center text-sm">
               <div class="flex items-center space-x-2">
                 <span>Latest Price</span>
                 <button
@@ -52,7 +54,7 @@
                 </button>
               </div>
             </th>
-            <th class="px-4 py-3 text-center">Quote Change</th>
+            <th class="px-4 py-3 text-center text-sm">Quote Change</th>
           </tr>
         </thead>
         <tbody>
@@ -137,7 +139,7 @@ export default {
       this.error = null;
       try {
         const response = await fetch(
-          "https://ledger.masmutdev.id//api/get-crypto-list"
+          "https://ledger.masmutdev.id/api/get-crypto-list"
         );
         if (!response.ok) throw new Error("Gagal mengambil data dari server.");
         const data = await response.json();
