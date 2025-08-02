@@ -11,10 +11,10 @@
           class="bg-gray-400 dark:bg-slate-900 text-[8px] uppercase text-black dark:text-gray-400"
         >
           <tr>
-            <th class="px-4 py-3 text-center text-sm">
+            <th class="px-4 py-3 text-center text-[12px]">
               Name / 24h Transaction Volume
             </th>
-            <th class="px-4 py-3 text-center text-sm">
+            <th class="px-4 py-3 text-center text-[12px]">
               <div class="flex items-center space-x-2">
                 <span>Latest Price</span>
                 <button
@@ -54,7 +54,7 @@
                 </button>
               </div>
             </th>
-            <th class="px-4 py-3 text-center text-sm">Quote Change</th>
+            <th class="px-4 py-3 text-center text-[12px]">Quote Change</th>
           </tr>
         </thead>
         <tbody>
