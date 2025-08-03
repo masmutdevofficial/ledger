@@ -4,7 +4,7 @@
     style="bottom: 0; width: 100%; z-index: 10"
   >
     <footer
-      class="bottom-0 left-0 w-full max-w-[450px] px-4 mb-4 bg-orange-600/30 dark:bg-orange-600/30 dark:shadow-lg"
+      class="bottom-0 left-0 w-full max-w-[450px] px-4 mb-4 bg-[#9E9D9D] dark:bg-[#9E9D9D] dark:shadow-lg"
     >
       <div
         class="flex justify-between items-center py-3 relative"

@@ -11,15 +11,12 @@
           class="bg-gray-400 dark:bg-slate-900 text-[8px] uppercase text-black dark:text-gray-400"
         >
           <tr>
-            <th
-              class="px-4 py-3 text-center text-[12px]"
-              style="font-size: 12px !important"
-            >
-              Name / 24h Transaction Volume
+            <th class="px-4 py-3 text-center">
+              <p class="text-[8px]">Name / 24h Transaction Volume</p>
             </th>
-            <th class="px-4 py-3 text-center text-[12px]">
+            <th class="px-4 py-3 text-center">
               <div class="flex items-center space-x-2">
-                <span style="font-size: 12px !important">Latest Price</span>
+                <span><p class="text-[8px]">Latest Price</p></span>
                 <button
                   @click="toggleSort"
                   class="text-black dark:text-gray-400 hover:text-white focus:outline-none"
@@ -57,11 +54,8 @@
                 </button>
               </div>
             </th>
-            <th
-              class="px-4 py-3 text-center text-[12px]"
-              style="font-size: 12px !important"
-            >
-              Quote Change
+            <th class="px-4 py-3 text-center">
+              <p class="text-[8px]">Quote Change</p>
             </th>
           </tr>
         </thead>
